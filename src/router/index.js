@@ -24,6 +24,25 @@ const routes = [
     path: '/task-four',
     name: 'TaskFour',
     component: () => import(/* webpackChunkName: "about" */ '../views/taskFour.vue')
+  },
+  {
+    path: '/cinema',
+    name: 'Cinema',
+    component: () => import(/* webpackChunkName: "about" */ '../views/cinema'),
+    children: [
+      {
+        path: 'movies',
+        component: () => import(/* webpackChunkName: "about" */ '../views/cinema/allMovies'),
+      },
+      {
+        path: 'movie-shows',
+        component: () => import(/* webpackChunkName: "about" */ '../views/cinema/movieShows'),
+      },
+      {
+        path: 'movie/:id',
+        component: () => import(/* webpackChunkName: "about" */ '../views/cinema/movie'),
+      }
+    ]
   }
 ];
 

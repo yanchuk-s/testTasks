@@ -44,12 +44,12 @@ export default {
     this.getProducts();
   },
   computed: {
-    ...mapGetters([
+    ...mapGetters('products',[
       'products'
     ]),
   },
   methods: {
-    ...mapActions([
+    ...mapActions('products',[
       'getProducts'
     ]),
     productPrice (price) {
