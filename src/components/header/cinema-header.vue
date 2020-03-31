@@ -49,7 +49,7 @@ export default {
     .cinema-header{
         height: 50px;
         background-color: #221f1f;
-        border-bottom: 1px solid rgba(255,255,255,.1);
+        border-bottom: 1px solid rgba(255,255,255,.12);
         position: static;
         top: 0;
         margin-bottom: 30px;
